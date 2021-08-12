@@ -1,0 +1,177 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand','sans-serif';
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(6, 10, 19, 0.3);
+    position: relative;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+}
+
+.headText {
+    font-size: 3rem;
+    margin-left: 5rem;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-20px, -50%);
+    transition: opacity 250ms ease;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Dog-Rescue-Shelter-Header.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.first-heading {
+    font-family: cursive;
+    color: rgba(0, 255, 255, 0.6);
+    margin: 1em 5em;
+    font-size: 2em;
+}
+
+.first-subtext {
+    color: black;
+    font-weight: 600;
+}
+
+#donate {
+    font-size: 16px;
+    padding: 16px;
+    margin: 12px;
+    margin-top: 15px;
+    background-color:#74992e;
+    border: none;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: 300ms ease;
+}
+
+#donate:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 2rem 5rem 0 #74992e;
+}
+
+#donate:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .animate {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    .animate2 {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+        transition: all 300ms ease;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    .first-heading {
+        font-size: 2em;
+        transition: all 500ms 0.4s;
+    }
+    .first-subtext {
+        transition: all 500ms 0.6s;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 10;
+    }
+    .navlinks {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(20, 33, 61, 0.85);
+        flex-direction: column;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .navlinks.open {
+        clip-path: circle(1200px at 90% -20%);
+        -webkit-clip-path: circle(1200px at 90% -20%);
+        pointer-events: all;
+    }
+    .navlinks li {
+        opacity: 0;
+    }
+    .navlinks li a {
+        font-size: 25px;
+    }
+    .navlinks li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .navlinks li:nth-child(2) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .navlinks li:nth-child(3) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .navlinks li:nth-child(4) {
+        transition: all 0.5s ease 0.2s;
+    }
+    li.fade {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .headText {
+        font-size: 1em;
+    }
+    .first-heading {
+        font-size: 1.5em;
+    }
+    .first-subtext {
+        margin-top: 1rem;
+        font-size: 0.5em;
+    }
+}
