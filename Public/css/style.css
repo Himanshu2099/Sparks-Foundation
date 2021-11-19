@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Quicksand','sans-serif';
+    font-family: 'Spartan', sans-serif;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 nav {
     height: 10vh;
     width: 100%;
-    background-color: rgba(6, 10, 19, 0.3);
+    background-color: rgba(8, 8, 8, 0.4);
     position: relative;
 }
 
@@ -22,15 +22,45 @@ header {
 }
 
 .headText {
-    font-size: 3rem;
-    margin-left: 5rem;
+    font-size: 2rem;
+    margin-left: 2rem;
     color: black;
     position: absolute;
     top: 50%;
     left: 20px;
     transform: translate(-20px, -50%);
     transition: opacity 250ms ease;
-    font-weight: 700;
+    font-weight: 600;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+    width: 40%;
+    margin-left: auto;
+}
+
+.navlinks li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 250ms ease;
+}
+
+.navlinks li:hover {
+    background-color: rgba(252, 162, 17, 0.5);
+    transition: all 250ms ease;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
 }
 
 main {
@@ -40,7 +70,7 @@ main {
 }
 
 .first {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Dog-Rescue-Shelter-Header.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/Dog-Rescue-Shelter-Header.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -54,15 +84,16 @@ main {
 }
 
 .first-heading {
-    font-family: cursive;
-    color: rgba(0, 255, 255, 0.6);
-    margin: 1em 5em;
     font-size: 2em;
 }
 
 .first-subtext {
-    color: black;
-    font-weight: 600;
+    margin: 1em;
+    font-weight: 400;
+}
+
+.text {
+    color: #fca211;
 }
 
 #donate {
@@ -70,7 +101,7 @@ main {
     padding: 16px;
     margin: 12px;
     margin-top: 15px;
-    background-color:#74992e;
+    background-color: rgba(252, 162, 17, 0.7);
     border: none;
     font-weight: bold;
     color: black;
@@ -80,9 +111,9 @@ main {
 }
 
 #donate:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    box-shadow: 0 2rem 5rem 0 #74992e;
+    transform: translate3d(0, -5px, 0);
+    box-shadow: 0 2rem 5rem 0 rgba(252, 162, 17, 0.5);
+    transition: 300ms ease;
 }
 
 #donate:focus {

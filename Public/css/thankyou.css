@@ -1,13 +1,13 @@
 main {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/thankyou.jpg");
-    background-size: cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/thankyou.jpg");
+    background-size: contain;
     background-position: center;
 }
 
 .image {
-    background: url("../img/success.gif");
+    background: url("/img/success.gif");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

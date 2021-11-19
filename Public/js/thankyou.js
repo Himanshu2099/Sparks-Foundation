@@ -16,5 +16,5 @@ window.onload = () => {
 
     setInterval(function() {
         window.location.replace("index.html")
-    }, 8000)
+    }, 5000)
 }
